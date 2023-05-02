@@ -24,7 +24,7 @@ const rdmArray = (n: number, limit: number) => {
 
 const execute = (n: number, numberLimit: number, print?: boolean) => {
     let a = Date.now();
-    console.log(`Sorting array with ${n} elements with QuickSort...`);
+    console.log(`Sortiert array der Länge ${n} mit Quicksort...`);
     const arr = quickSort(rdmArray(n, n))
     .then(r => {
         let deltaT = Date.now() - a;
@@ -33,7 +33,7 @@ const execute = (n: number, numberLimit: number, print?: boolean) => {
 
             if(print) console.log(arr);
             
-            console.log(`Done! This took ${chalk.yellow(`${deltaT}s`)}`);
+            console.log(`Fertig! Dauer: ${chalk.yellow(`${deltaT}s`)}`);
         } else {
 
             if(print) console.log(arr);
