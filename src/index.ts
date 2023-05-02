@@ -56,5 +56,5 @@ const limitPrompt = await inquirer.prompt({
     default: sizePrompt.size,
 });
 
-execute(sizePrompt.size, limitPrompt.limit, process.env.npm_config_devMode == "true" ? true : false);
+execute(sizePrompt.size, limitPrompt.limit, process.env.npm_config_print == "true" ? true : false);
 
